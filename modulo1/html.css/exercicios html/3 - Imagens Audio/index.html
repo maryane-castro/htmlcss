@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Manipulando imagens, grandes, médias e pequenas.</h1>
+
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imgs/P.png" type="image/png"> <!--Se o navegador tiver menos de 750px-->
+        <source media="(max-width: 1050px)" srcset="imgs/M.png" type="image/png"> <!--Se o navegador tiver menos de 1050px-->
+
+        <img src="imgs/G.png">  <!--PRIMEIRA IMAGEM-->
+    </picture>
+
+    <h1>Aprendendo a reproduzir aúdio em HTML5</h1>
+    <audio src="midia/ n.ogg" controls autoplay></audio>
+    <!--Formatos de audio: MP3 OGG WAV-->
+    <h2>Outras formas de audio</h2>
+    <h3>Melhores são mp3 e ogg, o wav é um tipo de arquivo muito pesado</h3>
+    <audio preload="auto" autoplay controls> <!--loop-->
+        <source src="midia/n.mp3" type="audio/mpeg">
+        <source src="midia/ n.ogg" type="audio/ogg">
+        <source src="midia/n.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

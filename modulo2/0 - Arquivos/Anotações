@@ -1,0 +1,54 @@
+BASES DE CORES: MAXIMO E MINIMO 
+    red > 00 - 255                  min: 00
+    verde > 00 - 255                max: 255
+    azul > 00 - 255
+
+
+Sites para buscas
+
+cores: adobe color
+
+
+
+BOX-SHADOW: quanto ando pro lado>
+            quanto vai para baixo
+            quanto a sombra vai espalhar
+            qual a cor
+
+
+
+TIPOS DE MEDIDAS
+-medidas absolutas
+    cm, mm, in, px, pt, pc
+
+
+-medidas relativas
+    em, ex, rem, vw, vh, %
+em: relativo a altura m de uma fonte
+ex: relativo a altura x de uma fonte
+
+
+        usar:
+            px e em
+            16px == 1em
+
+
+font-size: tamanho da fonte(tamanho)
+font-weight: peso da fonte(negrito ou não)
+font-style: estilo da fonte(italico)
+text-decoration: decoração da fonte(sublinhado)
+
+
+TIPOS DE FORMAT()
+   - opentype (otf)
+   - truetype (ttf)
+   - embedded-opentype
+   - truetipe-aat (Apple Advanced Typography)
+   - svg
+
+
+
+TEXT INDENT: indentação de texto, espaço para começar um paragrafo
+
+    text-indent: 20px;
+

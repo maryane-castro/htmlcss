@@ -1,0 +1,16 @@
+strong -> tag de colocar em negrito
+em -> tag de colocar em itálico
+mark -> marca o texto como se fosse uma caneta(marca texto em amarelo)
+del -> risca por cima seu texto
+ins -> deixa seu texto sublinhado
+sup -> eleva letras ou numeros
+sub -> faz o contrario de sup
+pre -> faz a indetação, tipo em codigo python
+code -> ele deixa as palavras monoespaçadas, ou seja, cada letra ocupa mesma quantidade de espaço
+abbr -> faz com que ao passar o mause por cima, saiba o nome da abreviação (HTML, CSS).
+
+
+Para abrir uma nova aba quando adiconar um  link, utilize:
+    target="_blank"
+    ex.:
+     <p>Você pode acessar meu <a href="https://github.com/maryanecastro11" target="_blank" rel="external">repositorio publico no GitHub</a> </p>

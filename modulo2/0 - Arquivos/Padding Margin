@@ -1,0 +1,46 @@
+shorthand
+
+boder: tamanho, tipo, cor;
+outline: tamanho, tipo, cor
+
+
+O pading é oq fica dentro da borda, já a margin é o que fica depois da borda
+
+
+-> da Borda pra dentro(padding)
+-> da Borda pra fora(margin)
+
+
+outline: fica grudado a borda
+
+USAR DIV E SPAN
+
+box-level
+usar div, deixa tudo embaixo do outro
+ex:
+div
+h1 -- h6
+p
+main
+header
+article
+aside
+footer
+form
+video
+button
+input
+select
+
+
+inline-level
+usar span, deixa tudo ao lado do outro
+ex:
+span
+a
+code
+small
+strong
+em
+sup - sub
+label
