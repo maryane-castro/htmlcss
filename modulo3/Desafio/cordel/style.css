@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+:root{
+    --font1: Arial, Helvetica, sans-serif;
+    --font2: 'Playfair Display', serif;
+    --font3:  'Passion One', 'cursive';
+}
 
 *{
     margin: 0px;
@@ -6,8 +14,10 @@
 }
 
 html, body{
+    font-family: var(--font1);
     min-height: 100vh;
     background-color: rgb(172, 172, 172);
+    font-size: 1em;
 }
 
 
@@ -20,6 +30,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font3);
+    font-size: 6vw;
 }
 
 header > p{
@@ -41,6 +53,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font2);
+    font-size: 2.5vw;
 }
 
 
@@ -56,8 +70,10 @@ section.imagem{
 }
 
 section.imagem > p{
+    display: inline-block;
+    padding: 7px;
     background-color: rgb(79, 79, 79);
-    width: 400px;
+    
 }
 
 
