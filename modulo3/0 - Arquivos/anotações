@@ -1,0 +1,18 @@
+position absolute:
+    quando se usa o position absolute, pode-se usar diversas maneiras de posicionar um box dentro do html, pois desbloqueia as funções left e top.
+
+    ex:
+        position: absolute;
+        left: 100px;
+        top: 200px;
+
+
+para poder colocar centralizado:
+    code:
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);  ->translação
+
+IMAGENS:
+    EFEITO PARALAX
