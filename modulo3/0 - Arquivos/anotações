@@ -16,3 +16,7 @@ para poder colocar centralizado:
 
 IMAGENS:
     EFEITO PARALAX
+
+
+TH -> se tiver na mesma coluna | é scope="col"
+TH -> se tiver na mesma linha - é scope="row"

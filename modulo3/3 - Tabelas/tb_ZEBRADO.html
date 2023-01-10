@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        td.num{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anotomia para tabelas grandes
+        TABLE
+            CAPTION -> legenda a tabela
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federeativas</caption>
+        <thead> <!--CABEÇA-->
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody> <!--CORPO-->
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49 889 898</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19 977 000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">51 354 890</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">51 354 890</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">51 354 890</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">51 354 890</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">51 354 890</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--PÉ-->
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>89 632 912</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
