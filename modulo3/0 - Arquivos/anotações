@@ -20,3 +20,10 @@ IMAGENS:
 
 TH -> se tiver na mesma coluna | é scope="col"
 TH -> se tiver na mesma linha - é scope="row"
+
+
+
+PSEUDO CLASSE
+:nth-child(2n) -> da oefeito de duas em duas
+:nth-child(odd)  -> impar
+:nth-child(even) -> par
