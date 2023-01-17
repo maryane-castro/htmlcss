@@ -7,6 +7,30 @@
     <title>formulario 2</title>
 </head>
 <body>
-    
+    <h1>Teste de formulario</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+
+        <p><label for="iusu">Usuário:</label> 
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome">  <!--required quer dizer que é obrigadorio preencher esse campo-->
+        </p>
+        
+        <p><label for="isenha">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" placeholder="senha">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
 </body>
 </html>
+
+<!--Define o nome minimo que deve ser digitado e define o nome maximo a ser digitado
+                            minlength="5" maxlength="15"
+
+    O placeholder deixa as letras do input mais claras.
+-->
+
