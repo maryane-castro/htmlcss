@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 4</title>
+</head>
+<body>
+    <h1>Exemplo de formlario</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset> <!--Faz um agrupamento desses campos-->
+            <legend>Dados pessoais</legend> <!--faz uma legenda sobre esse fieldset-->
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required placeholder="nome">
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^(\d{2})\d{4, 5}-\d{4}$" placeholder="(xx) xxxxx-xxxx">
+            </p>
+        </fieldset>
+        <!--Estudar mais sobre RegEx: expressões regulares.-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
+</body>
+</html>
