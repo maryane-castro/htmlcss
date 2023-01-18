@@ -17,6 +17,12 @@ menu{
     display: none;
 }
 
-article::after{
+
+article{
+   width: 100%; 
+}
+
+
+article::after{  /*Depois do meu article*/
     content: "Esse artivo foi impresso";
 }
