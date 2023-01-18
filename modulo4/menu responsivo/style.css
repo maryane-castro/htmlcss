@@ -20,8 +20,22 @@ header > h1{
     padding: 10px;
 }
 
-menu{
+span#menu{
+    background-color: rgb(32, 32, 32);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#menu:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
 
 }
 
@@ -38,6 +52,8 @@ menu > ul > li > a{
     text-align: center;
     border-top: 2px solid rgb(211, 211, 211);
 }
+
+
 
 
 menu > ul > li > a:hover{
