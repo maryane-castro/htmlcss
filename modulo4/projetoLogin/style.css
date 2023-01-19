@@ -39,14 +39,16 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.915);
+
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
 section#login > #imagem{
     display: block;
-    background: #5f2c82 url("img/predio.jpg");
+    background: #5f2c82 url("img/predio.jpg")  no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left bottom;
     height: 200px;
     
 }
@@ -54,4 +56,43 @@ section#login > #imagem{
 section#login > #formulario{
     display: block;
     padding: 10px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    
+    section#login{
+        width: 80vw;
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    section#login{
+        width: 950px;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
 }
