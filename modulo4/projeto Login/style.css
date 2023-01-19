@@ -16,4 +16,42 @@ Paleta de Cores:
 
 body, html{
     background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw; 
+}
+
+main{
+    position: relative; /**PARA COLOCAR NO MAEIO*/
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    /*DIV DENTRO DE OUTRA DIV, A PRIMEIRA COM RELATIVE, A SEGUNDA COM ABSOLUTE, USANDO TOP E LEF 505 E TRANSFORME TRANSLATE -50% O TOP E O LEFT */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /*PARA COLOCAR NO MEIO*/
+    overflow: hidden; /*imagem que passou da borda, ficou escondida */
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.915);
+}
+
+section#login > #imagem{
+    display: block;
+    background: #5f2c82 url("img/predio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    
+}
+
+section#login > #formulario{
+    display: block;
+    padding: 10px;
 }
