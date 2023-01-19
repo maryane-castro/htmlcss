@@ -31,7 +31,7 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /*PARA COLOCAR NO MEIO*/
+    
     overflow: hidden; /*imagem que passou da borda, ficou escondida */
 
     background-color: white;
@@ -42,6 +42,8 @@ section#login{
 
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
+
+    transform: translate(-50%, -50%);  /*PARA COLOCAR NO MEIO*/
 }
 
 section#login > #imagem{
@@ -75,8 +77,9 @@ form > .campo{
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
 }
 
 
@@ -84,9 +87,30 @@ form > .campo{
     display: none;
 }
 
+.campo > span{
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input{
+    background-color: #49a09d;
+    font-size: 1em;
+    width: calc(100% - 44.7px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
 
 
-
+.campo > input:focus-within{
+    background-color: white;
+    border: white;
+}
 
 form > input[type=submit]{
     display: block;
@@ -111,7 +135,7 @@ form > a.botao{
     width: 100%;
     height: 40px;
     padding-top: 5px;
-    margin-top: 7px;
+    margin-top: 20px;
     background-color: white;
     color: rgb(0, 0, 0);
     border: 1px solid #2f5f5e;
@@ -134,19 +158,6 @@ form > a.botao > span{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 992px){
     body{
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
@@ -154,6 +165,7 @@ form > a.botao > span{
     
     section#login{
         width: 80vw;
+        height: 350px;
     }
     section#login > div#imagem{
         float: right;
@@ -164,6 +176,18 @@ form > a.botao > span{
         float: left;
         width: 70%;
     }
+
+    #formulario > h1{
+        color: #49a09d;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+
+    #formulario > p{
+        font-size: 1em;
+        margin: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -172,6 +196,7 @@ form > a.botao > span{
     }
     section#login{
         width: 950px;
+        height: 450px;
     }
 
     section#login > div#imagem{
@@ -185,13 +210,15 @@ form > a.botao > span{
     }
 
     #formulario > h1{
+        color: #49a09d;
         text-align: center;
         margin-bottom: 10px;
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     
     #formulario > p{
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px;
     }
 }
