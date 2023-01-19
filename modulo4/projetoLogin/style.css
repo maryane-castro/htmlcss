@@ -42,7 +42,6 @@ section#login{
 
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
-
     transform: translate(-50%, -50%);  /*PARA COLOCAR NO MEIO*/
 }
 
