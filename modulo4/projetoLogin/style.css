@@ -59,6 +59,43 @@ section#login > #formulario{
 }
 
 
+#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+#formulario > p{
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width: 992px){
     body{
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
@@ -68,12 +105,12 @@ section#login > #formulario{
         width: 80vw;
     }
     section#login > div#imagem{
-        float: left;
+        float: right;
         width: 30%;
         height: 100%;
     }
     section#login > div#formulario{
-        float: right;
+        float: left;
         width: 70%;
     }
 }
@@ -94,5 +131,16 @@ section#login > #formulario{
     section#login > div#formulario{
         float: right;
         width: 50%;
+    }
+
+    #formulario > h1{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+
+    
+    #formulario > p{
+        font-size: 1.2em;
     }
 }
